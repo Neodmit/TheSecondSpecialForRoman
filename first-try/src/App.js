@@ -1,19 +1,25 @@
-import Header from "./Portfolio/Header/Header";
-import Intro from "./Portfolio/Intro/Intro"
-import Services from "./Portfolio/Services/Services"
-import Brands from "./Portfolio/Brands/Brands"
+import React, {Component} from "react";
+import {Route, Routes} from 'react-router-dom'
+import Layout from "./hoc/Layout/Layout";
+import Home from "./Portfolio/Home/Home";
+import Service from "./Portfolio/Service/Service";
+import Works from "./Portfolio/Works/Works";
+import Blog from "./Portfolio/Blog/Blog";
 
-function App() {
-  return (
-     <div className="App">
-        <Header/>
-        <main class="main">
-          <Intro/>
-          <Services/>
-          <Brands/>
-        </main>
-     </div>
-  );
+class App extends Component {
+  render(){
+    return (
+       <Layout>
+         
+         <Routes>
+           <Route path ="/" element = {<Home/>}/>
+           <Route path ="/service" element = {<Service/>}/>
+           <Route path ="/works" element = {<Works/>}/>
+           <Route path ="/blog" element = {<Blog/>}/>
+         </Routes>
+        </Layout>
+    )
+  }
 }
 
 export default App;

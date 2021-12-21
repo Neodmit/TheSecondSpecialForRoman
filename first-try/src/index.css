@@ -141,8 +141,7 @@ html{
   box-sizing: inherit;
 }
 
-.main{
+main{
   height: 100vh;
   padding-top: 338px; 
 }
-
