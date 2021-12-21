@@ -1,0 +1,70 @@
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #6B7280;
+}
+
+/* Header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 87px;
+    background-color: white;
+}
+
+.main_wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap; 
+    list-style-type : none;
+}
+
+.header_item{
+    margin-right: 80px;
+    padding-top: 12px;
+}
+
+.header_link{
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B7280;
+    text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+   opacity: .75; 
+}
+
+.header_hire_button{
+    border: solid;
+    border-width: 1px;
+    padding: 12px 32px;
+    color: #3730A3;
+    background-color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header_hire_button:hover{
+    background-color: #3730A3;
+    color: white;
+}
